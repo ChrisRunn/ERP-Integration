@@ -1,0 +1,17 @@
+C:\Users\Christia\Documents\Visual Studio 2012\Projects\ERP Integration\ERP Integration\bin\Debug\ERP Integration.exe
+C:\Users\Christia\Documents\Visual Studio 2012\Projects\ERP Integration\ERP Integration\bin\Debug\ERP Integration.pdb
+C:\Users\Christia\Documents\Visual Studio 2012\Projects\ERP Integration\ERP Integration\obj\Debug\ERP Integration.csprojResolveAssemblyReference.cache
+C:\Users\Christia\Documents\Visual Studio 2012\Projects\ERP Integration\ERP Integration\obj\Debug\ERP_Integration.Properties.Resources.resources
+C:\Users\Christia\Documents\Visual Studio 2012\Projects\ERP Integration\ERP Integration\obj\Debug\ERP Integration.csproj.GenerateResource.Cache
+C:\Users\Christia\Documents\Visual Studio 2012\Projects\ERP Integration\ERP Integration\obj\Debug\ERP Integration.exe
+C:\Users\Christia\Documents\Visual Studio 2012\Projects\ERP Integration\ERP Integration\obj\Debug\ERP Integration.pdb
+C:\Users\Christia\documents\visual studio 2012\Projects\ERP Integration\ERP Integration\obj\Debug\ERP_Integration.ErpGui.resources
+C:\Users\Christia\Desktop\Git\ERP Integration\ERP Integration\obj\Debug\ERP Integration.exe
+C:\Users\Christia\Desktop\Git\ERP Integration\ERP Integration\obj\Debug\ERP Integration.pdb
+C:\Users\Christia\Desktop\Git\ERP Integration\ERP Integration\bin\Debug\ERP Integration.exe.config
+C:\Users\Christia\Desktop\Git\ERP Integration\ERP Integration\bin\Debug\ERP Integration.exe
+C:\Users\Christia\Desktop\Git\ERP Integration\ERP Integration\bin\Debug\ERP Integration.pdb
+C:\Users\Christia\Desktop\Git\ERP Integration\ERP Integration\obj\Debug\ERP Integration.csprojResolveAssemblyReference.cache
+C:\Users\Christia\Desktop\Git\ERP Integration\ERP Integration\obj\Debug\ERP_Integration.ErpGui.resources
+C:\Users\Christia\Desktop\Git\ERP Integration\ERP Integration\obj\Debug\ERP_Integration.Properties.Resources.resources
+C:\Users\Christia\Desktop\Git\ERP Integration\ERP Integration\obj\Debug\ERP Integration.csproj.GenerateResource.Cache
