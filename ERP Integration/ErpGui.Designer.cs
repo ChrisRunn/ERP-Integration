@@ -52,7 +52,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(104, 136);
+            this.btnDelete.Location = new System.Drawing.Point(93, 136);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 0;
@@ -62,7 +62,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(185, 136);
+            this.btnUpdate.Location = new System.Drawing.Point(179, 136);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 1;
@@ -72,7 +72,7 @@
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(23, 136);
+            this.btnInsert.Location = new System.Drawing.Point(7, 136);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 23);
             this.btnInsert.TabIndex = 2;
@@ -83,16 +83,16 @@
             // cbOptions
             // 
             this.cbOptions.FormattingEnabled = true;
-            this.cbOptions.Location = new System.Drawing.Point(649, 492);
+            this.cbOptions.Location = new System.Drawing.Point(20, 224);
             this.cbOptions.Name = "cbOptions";
-            this.cbOptions.Size = new System.Drawing.Size(350, 21);
+            this.cbOptions.Size = new System.Drawing.Size(335, 21);
             this.cbOptions.TabIndex = 3;
             this.cbOptions.SelectedIndexChanged += new System.EventHandler(this.cbOptions_SelectedIndexChanged);
             // 
             // lblQueries
             // 
             this.lblQueries.AutoSize = true;
-            this.lblQueries.Location = new System.Drawing.Point(646, 476);
+            this.lblQueries.Location = new System.Drawing.Point(16, 208);
             this.lblQueries.Name = "lblQueries";
             this.lblQueries.Size = new System.Drawing.Size(72, 13);
             this.lblQueries.TabIndex = 4;
@@ -100,21 +100,21 @@
             // 
             // txtBoxLastName
             // 
-            this.txtBoxLastName.Location = new System.Drawing.Point(6, 110);
+            this.txtBoxLastName.Location = new System.Drawing.Point(7, 110);
             this.txtBoxLastName.Name = "txtBoxLastName";
             this.txtBoxLastName.Size = new System.Drawing.Size(335, 20);
             this.txtBoxLastName.TabIndex = 6;
             // 
             // txtBoxName
             // 
-            this.txtBoxName.Location = new System.Drawing.Point(6, 71);
+            this.txtBoxName.Location = new System.Drawing.Point(7, 71);
             this.txtBoxName.Name = "txtBoxName";
             this.txtBoxName.Size = new System.Drawing.Size(335, 20);
             this.txtBoxName.TabIndex = 7;
             // 
             // txtBoxNo
             // 
-            this.txtBoxNo.Location = new System.Drawing.Point(6, 32);
+            this.txtBoxNo.Location = new System.Drawing.Point(7, 32);
             this.txtBoxNo.Name = "txtBoxNo";
             this.txtBoxNo.Size = new System.Drawing.Size(335, 20);
             this.txtBoxNo.TabIndex = 8;
@@ -122,7 +122,7 @@
             // lblNo
             // 
             this.lblNo.AutoSize = true;
-            this.lblNo.Location = new System.Drawing.Point(3, 16);
+            this.lblNo.Location = new System.Drawing.Point(4, 16);
             this.lblNo.Name = "lblNo";
             this.lblNo.Size = new System.Drawing.Size(91, 13);
             this.lblNo.TabIndex = 9;
@@ -131,7 +131,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(3, 55);
+            this.lblName.Location = new System.Drawing.Point(4, 55);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(82, 13);
             this.lblName.TabIndex = 10;
@@ -140,7 +140,7 @@
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(3, 94);
+            this.lblLastName.Location = new System.Drawing.Point(4, 94);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(101, 13);
             this.lblLastName.TabIndex = 11;
@@ -149,15 +149,15 @@
             // cbOptions2
             // 
             this.cbOptions2.FormattingEnabled = true;
-            this.cbOptions2.Location = new System.Drawing.Point(649, 532);
+            this.cbOptions2.Location = new System.Drawing.Point(20, 264);
             this.cbOptions2.Name = "cbOptions2";
-            this.cbOptions2.Size = new System.Drawing.Size(350, 21);
+            this.cbOptions2.Size = new System.Drawing.Size(335, 21);
             this.cbOptions2.TabIndex = 12;
             // 
             // lblMetaData
             // 
             this.lblMetaData.AutoSize = true;
-            this.lblMetaData.Location = new System.Drawing.Point(646, 516);
+            this.lblMetaData.Location = new System.Drawing.Point(16, 248);
             this.lblMetaData.Name = "lblMetaData";
             this.lblMetaData.Size = new System.Drawing.Size(71, 13);
             this.lblMetaData.TabIndex = 13;
@@ -165,7 +165,7 @@
             // 
             // btnSelect
             // 
-            this.btnSelect.Location = new System.Drawing.Point(266, 136);
+            this.btnSelect.Location = new System.Drawing.Point(265, 136);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(75, 23);
             this.btnSelect.TabIndex = 14;
@@ -176,9 +176,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
+            this.dataGridView1.Location = new System.Drawing.Point(375, 20);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(634, 535);
+            this.dataGridView1.Size = new System.Drawing.Size(621, 526);
             this.dataGridView1.TabIndex = 15;
             // 
             // gbQueries
@@ -194,7 +194,7 @@
             this.gbQueries.Size = new System.Drawing.Size(1005, 560);
             this.gbQueries.TabIndex = 16;
             this.gbQueries.TabStop = false;
-            this.gbQueries.Text = "Show database content";
+            this.gbQueries.Enter += new System.EventHandler(this.gbQueries_Enter);
             // 
             // gbEditContent
             // 
@@ -208,12 +208,11 @@
             this.gbEditContent.Controls.Add(this.txtBoxName);
             this.gbEditContent.Controls.Add(this.lblLastName);
             this.gbEditContent.Controls.Add(this.txtBoxLastName);
-            this.gbEditContent.Location = new System.Drawing.Point(649, 19);
+            this.gbEditContent.Location = new System.Drawing.Point(12, 18);
             this.gbEditContent.Name = "gbEditContent";
             this.gbEditContent.Size = new System.Drawing.Size(350, 169);
             this.gbEditContent.TabIndex = 16;
             this.gbEditContent.TabStop = false;
-            this.gbEditContent.Text = "Administrate employee";
             // 
             // ErpGui
             // 

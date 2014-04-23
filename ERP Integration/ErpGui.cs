@@ -85,6 +85,11 @@ namespace ERP_Integration
            dataGridView1.DataSource = dt;
         }
 
+       private void gbQueries_Enter(object sender, EventArgs e)
+       {
+
+       }
+
 
     }
 
