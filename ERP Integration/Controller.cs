@@ -17,24 +17,24 @@ namespace ERP_Integration
 
         #region Select, Update, Delete, Insert
 
-        public DataSet GetAllEmployees()
+        public DataSet SearchEmployee(String searchString)
         {
-            return dal.GetAllEmployees();
+            return dal.SearchEmployee(searchString);
         }
 
-        public void InsertEmployee(string no, string name, string lastName)
+        public void InsertEmployee(string no, string name)
         {
-            this.dal.InsertEmployee(no, name, lastName);
+            this.dal.InsertEmployee(no, name);
         }
 
-        public string DeleteEmployee(string no)
+        public void DeleteEmployee(string no)
         {
-            return this.dal.DeleteEmployee(no);
+            this.dal.DeleteEmployee(no);
         }
 
-        public string UpdateEmployee(string no, string name, string lastName)
+        public void UpdateEmployee(string no, string name, string lastName)
         {
-            return this.dal.UpdateEmployee(no, name, lastName);
+            this.dal.UpdateEmployee(no, name, lastName);
         }
 
         #endregion Select, Update, Delete, Insert

@@ -3,33 +3,34 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
-using ERP_Integration.ServiceReference1;
+using ERP_Integration.ERPIntegrationWSReference;
 
 namespace ERP_Integration
 {
     class DataAccessLayer
     {
-        Service1SoapClient proxy = new Service1SoapClient();
 
+        ERPIntegrationWSSoapClient proxy = new ERPIntegrationWSSoapClient();
+        
         #region Select, Update, Delete, Insert
-        public void InsertEmployee(string no, string name, string lastName)
+        public void InsertEmployee(string no, string name)
         {
-            return proxy.InsertEmployee(no, name, lastName);
+            proxy.InsertEmployee(no, name);
         }
 
-        public string DeleteEmployee(string no)
+        public void DeleteEmployee(string no)
         {
-            return proxy.DeleteEmployee(no);
+            proxy.DeleteEmployee(no);
         }
 
-        public string UpdateEmployee(string no, string name, string lastName)
+        public void UpdateEmployee(string no, string name, string lastName)
         {
-            return proxy.UpdateEmployee(no, name, lastName);
+            proxy.UpdateEmployee(no, name, lastName);
         }
 
-        public DataSet GetAllEmployees()
+        public DataSet SearchEmployee(String searchString)
         {
-            return proxy.GetAllEmployees();
+            return null; //proxy.SearchEmployee(searchString);
         }
 
         #endregion Select, Update, Delete, Insert
@@ -37,7 +38,7 @@ namespace ERP_Integration
         #region Uppgift A
         public DataSet GetEmployeeAndMetadata()
         {
-            return proxy.GetEmployeeAndMetadata();
+            return proxy.GetEmployeeAndMetaData();
         }
 
         public DataSet GetEmployeeAndRelatives()

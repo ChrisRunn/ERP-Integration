@@ -41,9 +41,9 @@
             this.lblLastName = new System.Windows.Forms.Label();
             this.cbOptions2 = new System.Windows.Forms.ComboBox();
             this.lblMetaData = new System.Windows.Forms.Label();
-            this.btnSelect = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.gbQueries = new System.Windows.Forms.GroupBox();
+            this.lblError = new System.Windows.Forms.Label();
             this.gbEditContent = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbQueries.SuspendLayout();
@@ -153,6 +153,7 @@
             this.cbOptions2.Name = "cbOptions2";
             this.cbOptions2.Size = new System.Drawing.Size(335, 21);
             this.cbOptions2.TabIndex = 12;
+            this.cbOptions2.SelectedIndexChanged += new System.EventHandler(this.cbOptions2_SelectedIndexChanged_1);
             // 
             // lblMetaData
             // 
@@ -162,16 +163,6 @@
             this.lblMetaData.Size = new System.Drawing.Size(71, 13);
             this.lblMetaData.TabIndex = 13;
             this.lblMetaData.Text = "Get metadata";
-            // 
-            // btnSelect
-            // 
-            this.btnSelect.Location = new System.Drawing.Point(265, 136);
-            this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(75, 23);
-            this.btnSelect.TabIndex = 14;
-            this.btnSelect.Text = "Select";
-            this.btnSelect.UseVisualStyleBackColor = true;
-            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // dataGridView1
             // 
@@ -183,6 +174,7 @@
             // 
             // gbQueries
             // 
+            this.gbQueries.Controls.Add(this.lblError);
             this.gbQueries.Controls.Add(this.gbEditContent);
             this.gbQueries.Controls.Add(this.cbOptions);
             this.gbQueries.Controls.Add(this.dataGridView1);
@@ -196,11 +188,19 @@
             this.gbQueries.TabStop = false;
             this.gbQueries.Enter += new System.EventHandler(this.gbQueries_Enter);
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(25, 190);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 17;
+            // 
             // gbEditContent
             // 
             this.gbEditContent.Controls.Add(this.lblNo);
             this.gbEditContent.Controls.Add(this.txtBoxNo);
-            this.gbEditContent.Controls.Add(this.btnSelect);
             this.gbEditContent.Controls.Add(this.btnInsert);
             this.gbEditContent.Controls.Add(this.lblName);
             this.gbEditContent.Controls.Add(this.btnUpdate);
@@ -246,10 +246,10 @@
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.ComboBox cbOptions2;
         private System.Windows.Forms.Label lblMetaData;
-        private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox gbQueries;
         private System.Windows.Forms.GroupBox gbEditContent;
+        private System.Windows.Forms.Label lblError;
     }
 }
 

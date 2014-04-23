@@ -36,3 +36,9 @@ C:\Users\William\Documents\ERP-Integration\ERP Integration\obj\Debug\ERP Integra
 C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\bin\Debug\ERP Integration.exe.config
 C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\obj\Debug\ERP Integration.exe
 C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\obj\Debug\ERP Integration.pdb
+C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\bin\Debug\ERP Integration.exe
+C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\bin\Debug\ERP Integration.pdb
+C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\obj\Debug\ERP Integration.csprojResolveAssemblyReference.cache
+C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\obj\Debug\ERP_Integration.ErpGui.resources
+C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\obj\Debug\ERP_Integration.Properties.Resources.resources
+C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\obj\Debug\ERP Integration.csproj.GenerateResource.Cache
