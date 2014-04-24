@@ -84,6 +84,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Service References\ERPIntegrationWSReference\ERPIntegrationWS.wsdl" />
+    <None Include="Service References\ERPIntegrationWSReference\ERP_Integration.ERPIntegrationWSReference.SysObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
