@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7b7f7b31-5075-47f0-9abf-0e232cddbfa7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ee2b13ce-e69d-455f-96d6-9355fcd08a40" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -20,11 +20,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:61058/ERPIntegrationWS.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:61058/ERPIntegrationWS.asmx?WSDL" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ERPIntegrationWS.disco" MetadataType="Disco" ID="168bf3d2-1537-4202-9dd1-6dcc0ea56647" SourceId="1" SourceUrl="http://localhost:61058/ERPIntegrationWS.asmx?disco" />
-    <MetadataFile FileName="ERPIntegrationWS.wsdl" MetadataType="Wsdl" ID="bd511f05-9228-49ef-8074-b36fab5c7040" SourceId="1" SourceUrl="http://localhost:61058/ERPIntegrationWS.asmx?wsdl" />
+    <MetadataFile FileName="ERPIntegrationWS.wsdl" MetadataType="Wsdl" ID="3eea8b05-8a02-4757-a420-9a606f8bec20" SourceId="1" SourceUrl="http://localhost:61058/ERPIntegrationWS.asmx?WSDL" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

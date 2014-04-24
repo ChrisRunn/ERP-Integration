@@ -28,72 +28,83 @@ namespace ERP_Integration
             proxy.UpdateEmployee(no, name, lastName);
         }
 
-        public DataSet SearchEmployee(String searchString)
+        public DataSet SearchEmployee(string searchString)
         {
-            return null; //proxy.SearchEmployee(searchString);
+            List<Employee> myList = new List<Employee>(proxy.SearchEmployee(searchString)());
+            return myList;
         }
 
         #endregion Select, Update, Delete, Insert
 
-        //#region Uppgift A
+        #region Uppgift A
         //public List<Employee> GetEmployeeAndMetadata()
         //{
-        //    return proxy.GetEmployeeAndMetaData();
+        //    List<Employee> myList = new List<Employee>(proxy.GetEmployeeAndMetaData());
+        //    return myList;
         //}
 
-        //public List<EmployeeRelatives> GetEmployeeAndRelatives()
+        //public List<EmployeeRelative> GetEmployeeAndRelatives()
         //{
-        //    return proxy.GetEmployeeAndRelatives();
+        //    List<EmployeeRelative> myList = new List<EmployeeRelative>(proxy.GetEmployeeAndRelatives());
+        //    return myList;
         //}
 
         //public List<EmployeeAbsence> GetSickEmployee()
         //{
-        //    return proxy.GetSickEmployee();
+        //    List<EmployeeAbsence> myList = new List<EmployeeAbsence>(proxy.GetSickEmployee());
+        //    return myList;
         //}
 
         //public List<EmployeeAbsence> GetMostSickEmployee()
         //{
-        //    return proxy.GetMostSickEmployee();
+        //    List<EmployeeAbsence> myList = new List<EmployeeAbsence>(proxy.GetMostSickEmployee());
+        //    return myList;
         //}
 
-        //#endregion Uppgift A
+        #endregion Uppgift A
 
         #region Uppgift B
         public List<SysObject> GetAllKeys()
         {
-            return proxy.GetAllKeys();
-
+            List<SysObject> myList = new List<SysObject>(proxy.GetAllKeys());
+            return myList;
         }
 
-        //public List<SysIndex> GetAllIndexes()
-        //{
-        //    return proxy.GetAllIndexes();
-        //}
+        public List<SysIndex> GetAllIndexes()
+        {
+             List<SysIndex> myList = new List<SysIndex>(proxy.GetAllIndexes());
+            return myList;
+        }
 
-        //public List<SysConstraint> GetAllConstraints()
-        //{
-        //    return proxy.GetAllConstraints();
-        //}
+        public List<SysConstraint> GetAllConstraints()
+        {
+            List<SysConstraint> myList = new List<SysConstraint>(proxy.GetAllConstraints());
+            return myList;
+        }
 
-        //public List<SysObject> GetAllTables()
-        //{
-        //    return proxy.GetAllTables();
-        //}
+        public List<SysObject> GetAllTables()
+        {
+            List<SysObject> myList = new List<SysObject>(proxy.GetAllTables());
+            return myList;
+        }
 
-        //public List<SysTable> GetAllTables2()
-        //{
-        //    return proxy.GetAllTables2();
-        //}
+        public List<SysTable> GetAllTables2()
+        {
+            List<SysTable> myList = new List<SysTable>(proxy.GetAllTables2());
+            return myList;
+        }
 
-        //public List<SysColumn> GetColumnsEmployee()
-        //{
-        //    return proxy.GetColumnsEmployee();
-        //}
+        public List<SysColumn> GetColumnsEmployee()
+        {
+            List<SysColumn> myList = new List<SysColumn>(proxy.GetColumnsEmployee());
+            return myList;
+        }
 
-        //public List<Information_Schema_Column> GetColumnsEmployee2()
-        //{
-        //    return proxy.GetColumnsEmployee2();
-        //}
+        public List<Information_Schema_Column> GetColumnsEmployee2()
+        {
+            List<Information_Schema_Column> myList = new List<Information_Schema_Column>(proxy.GetColumnsEmployee2());
+            return myList;
+        }
         #endregion Uppgift B
 
 

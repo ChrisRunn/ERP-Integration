@@ -43,9 +43,9 @@
             this.lblMetaData = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.gbQueries = new System.Windows.Forms.GroupBox();
+            this.listView = new System.Windows.Forms.ListView();
             this.lblError = new System.Windows.Forms.Label();
             this.gbEditContent = new System.Windows.Forms.GroupBox();
-            this.listView = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbQueries.SuspendLayout();
             this.gbEditContent.SuspendLayout();
@@ -190,6 +190,16 @@
             this.gbQueries.TabStop = false;
             this.gbQueries.Enter += new System.EventHandler(this.gbQueries_Enter);
             // 
+            // listView
+            // 
+            this.listView.GridLines = true;
+            this.listView.Location = new System.Drawing.Point(15, 303);
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(340, 251);
+            this.listView.TabIndex = 18;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.Details;
+            // 
             // lblError
             // 
             this.lblError.AutoSize = true;
@@ -215,14 +225,6 @@
             this.gbEditContent.Size = new System.Drawing.Size(350, 169);
             this.gbEditContent.TabIndex = 16;
             this.gbEditContent.TabStop = false;
-            // 
-            // listView
-            // 
-            this.listView.Location = new System.Drawing.Point(15, 303);
-            this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(340, 251);
-            this.listView.TabIndex = 18;
-            this.listView.UseCompatibleStateImageBehavior = false;
             // 
             // ErpGui
             // 

@@ -61,13 +61,13 @@ namespace ERP_Integration
                     
                 case 1:
                     //listView.Clear();
-                    //List<Employee> employeesRelatives = c.GetEmployeeAndRelatives();
+                    //List<EmployeeRelative> employeesRelatives = c.GetEmployeeAndRelatives();
                     //listView.Columns.Add("First Name");
                     //listView.Columns.Add("Last Name");
                     //listView.Columns.Add("Relative Code");
                     //listView.Columns.Add("First Name");
 
-                    //foreach (Employee er in employeesRelatives)
+                    //foreach (EmployeeRelative er in employeesRelatives)
                     //{
 
                     //    ListViewItem lvi = new ListViewItem(er.FirstName);
@@ -81,11 +81,11 @@ namespace ERP_Integration
 
                 case 2:
                     //listView.Clear();
-                    //List<Employee> employeesSick = c.GetSickEmployee();
+                    //List<EmployeeAbsence> employeesSick = c.GetSickEmployee();
                     //listView.Columns.Add("First Name");
                     //listView.Columns.Add("Last Name");
 
-                    //foreach (Employee es in employeesSick)
+                    //foreach (EmployeeAbsence es in employeesSick)
                     //{
 
                     //    ListViewItem lvi = new ListViewItem(es.FirstName);
@@ -98,11 +98,11 @@ namespace ERP_Integration
                 case 3:
 
                     //listView.Clear();
-                    //List<Employee> employeeMostSick = c.GetMostSickEmployee();
+                    //List<EmployeeAbsence> employeeMostSick = c.GetMostSickEmployee();
                     //listView.Columns.Add("First Name");
                     //listView.Columns.Add("Last Name");
 
-                    //foreach (Employee ems in employeeMostSick)
+                    //foreach (EmployeeAbsence ems in employeeMostSick)
                     //{
 
                     //    ListViewItem lvi = new ListViewItem(ems.FirstName);
