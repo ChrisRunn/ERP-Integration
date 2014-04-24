@@ -41,12 +41,10 @@
             this.lblLastName = new System.Windows.Forms.Label();
             this.cbOptions2 = new System.Windows.Forms.ComboBox();
             this.lblMetaData = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.gbQueries = new System.Windows.Forms.GroupBox();
             this.listView = new System.Windows.Forms.ListView();
             this.lblError = new System.Windows.Forms.Label();
             this.gbEditContent = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbQueries.SuspendLayout();
             this.gbEditContent.SuspendLayout();
             this.SuspendLayout();
@@ -165,21 +163,12 @@
             this.lblMetaData.TabIndex = 13;
             this.lblMetaData.Text = "Get metadata";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(375, 20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(621, 526);
-            this.dataGridView1.TabIndex = 15;
-            // 
             // gbQueries
             // 
             this.gbQueries.Controls.Add(this.listView);
             this.gbQueries.Controls.Add(this.lblError);
             this.gbQueries.Controls.Add(this.gbEditContent);
             this.gbQueries.Controls.Add(this.cbOptions);
-            this.gbQueries.Controls.Add(this.dataGridView1);
             this.gbQueries.Controls.Add(this.lblQueries);
             this.gbQueries.Controls.Add(this.cbOptions2);
             this.gbQueries.Controls.Add(this.lblMetaData);
@@ -193,9 +182,9 @@
             // listView
             // 
             this.listView.GridLines = true;
-            this.listView.Location = new System.Drawing.Point(15, 303);
+            this.listView.Location = new System.Drawing.Point(383, 34);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(340, 251);
+            this.listView.Size = new System.Drawing.Size(594, 520);
             this.listView.TabIndex = 18;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
@@ -234,7 +223,6 @@
             this.Controls.Add(this.gbQueries);
             this.Name = "ErpGui";
             this.Text = "ERP Integration";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gbQueries.ResumeLayout(false);
             this.gbQueries.PerformLayout();
             this.gbEditContent.ResumeLayout(false);
@@ -258,7 +246,6 @@
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.ComboBox cbOptions2;
         private System.Windows.Forms.Label lblMetaData;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox gbQueries;
         private System.Windows.Forms.GroupBox gbEditContent;
         private System.Windows.Forms.Label lblError;

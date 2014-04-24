@@ -18,7 +18,7 @@ namespace ERP_Integration
         {
             InitializeComponent();
 
-            String[] options1 = { "Innehållet och metadata i Employee (Personal) och relaterade tabeller", "Information om Personal och deras släktingar (Personalanhörig)", "Information om anställda som har varit borta pga sjukdom år 2004 (Personalfrånvaro)", "First name på anstallda som har varit mest sjuka" };
+            String[] options1 = { "Innehållet och metadata i Employee och relaterade tabeller", "Information om Personal och deras släktingar", "Information om anställda som har varit borta pga sjukdom år 2004", "First name på anstallda som har varit mest sjuka" };
             for (int i = 0; i < options1.Length; i++)
             {
                 cbOptions.Items.Add(options1[i]);

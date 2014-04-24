@@ -95,6 +95,9 @@
     <WCFMetadataStorage Include="Service References\ERPIntegrationWSReference\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Service References\ERPIntegrationWSReference\ERPIntegrationWS.disco" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Service References\ERPIntegrationWSReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>

@@ -18,10 +18,10 @@ namespace ERP_Integration
 
         #region Select, Update, Delete, Insert
 
-        public List<Employee> SearchEmployee(string searchString)
-        {
-            return dal.SearchEmployee(searchString);
-        }
+        //public List<Employee> SearchEmployee(string searchString)
+        //{
+        //    return dal.SearchEmployee(searchString);
+        //}
 
         public void InsertEmployee(string no, string name)
         {
@@ -40,7 +40,7 @@ namespace ERP_Integration
 
         #endregion Select, Update, Delete, Insert
 
-        //#region Uppgift A
+        #region Uppgift A
         //public List<Employee> GetEmployeeAndMetadata()
         //{
         //    return dal.GetEmployeeAndMetadata();
@@ -69,35 +69,35 @@ namespace ERP_Integration
             return dal.GetAllKeys();
         }
 
-        public List<SysIndex> GetAllIndexes()
-        {
-            return dal.GetAllIndexes();
-        }
+        //public List<SysIndex> GetAllIndexes()
+        //{
+        //    return dal.GetAllIndexes();
+        //}
 
-        public List<SysConstraint> GetAllConstraints()
-        {
-            return dal.GetAllConstraints();
-        }
+        //public List<SysConstraint> GetAllConstraints()
+        //{
+        //    return dal.GetAllConstraints();
+        //}
 
-        public List<SysObject> GetAllTables()
-        {
-            return dal.GetAllTables();
-        }
+        //public List<SysObject> GetAllTables()
+        //{
+        //    return dal.GetAllTables();
+        //}
 
-        public List<SysTable> GetAllTables2()
-        {
-            return dal.GetAllTables2();
-        }
+        //public List<SysTable> GetAllTables2()
+        //{
+        //    return dal.GetAllTables2();
+        //}
 
-        public List<SysColumn> GetColumnsEmployee()
-        {
-            return dal.GetColumnsEmployee();
-        }
+        //public List<SysColumn> GetColumnsEmployee()
+        //{
+        //    return dal.GetColumnsEmployee();
+        //}
 
-        public List<Information_Schema_Column> GetColumnsEmployee2()
-        {
-            return dal.GetColumnsEmployee2();
-        }
+        //public List<Information_Schema_Column> GetColumnsEmployee2()
+        //{
+        //    return dal.GetColumnsEmployee2();
+        //}
         #endregion Uppgift B
     }
 }
