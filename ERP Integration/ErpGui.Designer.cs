@@ -45,6 +45,7 @@
             this.gbQueries = new System.Windows.Forms.GroupBox();
             this.lblError = new System.Windows.Forms.Label();
             this.gbEditContent = new System.Windows.Forms.GroupBox();
+            this.listView = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbQueries.SuspendLayout();
             this.gbEditContent.SuspendLayout();
@@ -174,6 +175,7 @@
             // 
             // gbQueries
             // 
+            this.gbQueries.Controls.Add(this.listView);
             this.gbQueries.Controls.Add(this.lblError);
             this.gbQueries.Controls.Add(this.gbEditContent);
             this.gbQueries.Controls.Add(this.cbOptions);
@@ -214,6 +216,14 @@
             this.gbEditContent.TabIndex = 16;
             this.gbEditContent.TabStop = false;
             // 
+            // listView
+            // 
+            this.listView.Location = new System.Drawing.Point(15, 303);
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(340, 251);
+            this.listView.TabIndex = 18;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            // 
             // ErpGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -250,6 +260,7 @@
         private System.Windows.Forms.GroupBox gbQueries;
         private System.Windows.Forms.GroupBox gbEditContent;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.ListView listView;
     }
 }
 

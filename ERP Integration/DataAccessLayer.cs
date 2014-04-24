@@ -36,22 +36,22 @@ namespace ERP_Integration
         #endregion Select, Update, Delete, Insert
 
         #region Uppgift A
-        public DataSet GetEmployeeAndMetadata()
+        public List<Employee> GetEmployeeAndMetadata()
         {
             return proxy.GetEmployeeAndMetaData();
         }
 
-        public DataSet GetEmployeeAndRelatives()
+        public List<EmployeeRelatives> GetEmployeeAndRelatives()
         {
             return proxy.GetEmployeeAndRelatives();
         }
 
-        public DataSet GetSickEmployee()
+        public List<EmployeeAbsence> GetSickEmployee()
         {
             return proxy.GetSickEmployee();
         }
 
-        public DataSet GetMostSickEmployee()
+        public List<EmployeeAbsence> GetMostSickEmployee()
         {
             return proxy.GetMostSickEmployee();
         }
@@ -59,37 +59,37 @@ namespace ERP_Integration
         #endregion Uppgift A
 
         #region Uppgift B
-        public DataSet GetAllKeys()
+        public List<SysObject> GetAllKeys()
         {
             return proxy.GetAllKeys();
         }
 
-        public DataSet GetAllIndexes()
+        public List<SysIndex> GetAllIndexes()
         {
             return proxy.GetAllIndexes();
         }
 
-        public DataSet GetAllConstraints()
+        public List<SysConstraint> GetAllConstraints()
         {
             return proxy.GetAllConstraints();
         }
 
-        public DataSet GetAllTables()
+        public List<SysObject> GetAllTables()
         {
             return proxy.GetAllTables();
         }
 
-        public DataSet GetAllTables2()
+        public List<SysTable> GetAllTables2()
         {
             return proxy.GetAllTables2();
         }
 
-        public DataSet GetColumnsEmployee()
+        public List<SysColumn> GetColumnsEmployee()
         {
             return proxy.GetColumnsEmployee();
         }
 
-        public DataSet GetColumnsEmployee2()
+        public List<Information_Schema_Column> GetColumnsEmployee2()
         {
             return proxy.GetColumnsEmployee2();
         }

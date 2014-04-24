@@ -17,7 +17,7 @@ namespace ERP_Integration
 
         #region Select, Update, Delete, Insert
 
-        public DataSet SearchEmployee(String searchString)
+        public List<> SearchEmployee(String searchString)
         {
             return dal.SearchEmployee(searchString);
         }
@@ -40,22 +40,22 @@ namespace ERP_Integration
         #endregion Select, Update, Delete, Insert
 
         #region Uppgift A
-        public DataSet GetEmployeeAndMetadata()
+        public List<> GetEmployeeAndMetadata()
         {
             return dal.GetEmployeeAndMetadata();
         }
 
-        public DataSet GetEmployeeAndRelatives()
+        public List<> GetEmployeeAndRelatives()
         {
             return dal.GetEmployeeAndRelatives();
         }
 
-        public DataSet GetSickEmployee()
+        public List<> GetSickEmployee()
         {
             return dal.GetSickEmployee();
         }
 
-        public DataSet GetMostSickEmployee()
+        public List<> GetMostSickEmployee()
         {
             return dal.GetMostSickEmployee();
         }
@@ -63,37 +63,37 @@ namespace ERP_Integration
         #endregion Uppgift A
 
         #region Uppgift B
-        public DataSet GetAllKeys()
+        public List<> GetAllKeys()
         {
             return dal.GetAllKeys();
         }
 
-        public DataSet GetAllIndexes()
+        public List<> GetAllIndexes()
         {
             return dal.GetAllIndexes();
         }
 
-        public DataSet GetAllConstraints()
+        public List<> GetAllConstraints()
         {
             return dal.GetAllConstraints();
         }
 
-        public DataSet GetAllTables()
+        public List<> GetAllTables()
         {
             return dal.GetAllTables();
         }
 
-        public DataSet GetAllTables2()
+        public List<> GetAllTables2()
         {
             return dal.GetAllTables2();
         }
 
-        public DataSet GetColumnsEmployee()
+        public List<> GetColumnsEmployee()
         {
             return dal.GetColumnsEmployee();
         }
 
-        public DataSet GetColumnsEmployee2()
+        public List<> GetColumnsEmployee2()
         {
             return dal.GetColumnsEmployee2();
         }
