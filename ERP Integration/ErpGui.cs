@@ -99,14 +99,15 @@ namespace ERP_Integration
                     List<EmpSick> employeeMostSick = c.GetMostSickEmployee();
                     listView.Columns.Add("First Name");
                     listView.Columns.Add("Last Name");
+                    listView.Columns.Add("Quantity");
 
                     foreach (EmpSick ems in employeeMostSick)
                     {
 
                         ListViewItem lvi = new ListViewItem(ems.FirstName);
                         lvi.SubItems.Add(ems.LastName);
+                        lvi.SubItems.Add(ems.Quantity);
                         listView.Items.Add(lvi);
-
                     }  
                     
                     break;
