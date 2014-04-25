@@ -184,7 +184,7 @@
             this.listView.GridLines = true;
             this.listView.Location = new System.Drawing.Point(383, 34);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(594, 520);
+            this.listView.Size = new System.Drawing.Size(594, 490);
             this.listView.TabIndex = 18;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
@@ -193,10 +193,12 @@
             // 
             this.lblError.AutoSize = true;
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(16, 541);
+            this.lblError.Location = new System.Drawing.Point(9, 535);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.Size = new System.Drawing.Size(29, 13);
             this.lblError.TabIndex = 17;
+            this.lblError.Text = "Error";
+            this.lblError.Visible = false;
             // 
             // gbEditContent
             // 
