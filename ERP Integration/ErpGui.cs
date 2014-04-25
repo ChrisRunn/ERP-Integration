@@ -17,7 +17,7 @@ namespace ERP_Integration
         public ErpGui()
         {
             InitializeComponent();
-
+            #region Comboboxes
             String[] options1 = { "Innehållet och metadata i Employee och relaterade tabeller", "Information om Personal och deras släktingar", "Information om anställda som har varit borta pga sjukdom år 2004", "First name på anstallda som har varit mest sjuka" };
             for (int i = 0; i < options1.Length; i++)
             {
@@ -29,11 +29,10 @@ namespace ERP_Integration
             {
                 cbOptions2.Items.Add(options2[i]);
             }
-         
+            #endregion Comboboxes
         }
 
-
-
+        #region Combobox1 - Uppgift A
         private void cbOptions_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (cbOptions.SelectedIndex)
@@ -112,8 +111,11 @@ namespace ERP_Integration
                     
                     break;
             }
+            this.ResizeColumnHeaders();
         }
+        #endregion Combobox1 - Uppgift A
 
+        #region Combobox2 - Uppgift B
         private void cbOptions2_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
@@ -217,8 +219,12 @@ namespace ERP_Integration
                     }
                     break;
             }
+            this.ResizeColumnHeaders();
 
         }
+        #endregion Combobox2 - Uppgift B
+
+        #region Insert, Delete, Update, Show All
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
@@ -243,11 +249,6 @@ namespace ERP_Integration
             c.UpdateEmployee(no, firstName, lastName);
         }
 
-        private void gbQueries_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnShowAll_Click(object sender, EventArgs e)
         {
             listView.Clear();
@@ -263,10 +264,22 @@ namespace ERP_Integration
                 lvi.SubItems.Add(k.LastName);
                 listView.Items.Add(lvi);
             }
+            this.ResizeColumnHeaders();
 
         }
 
+        #endregion Insert, Delete, Update, Show All
 
+        #region Columnsize
+        private void ResizeColumnHeaders()
+        {
+            for (int i = 0; i < this.listView.Columns.Count - 1; i++) this.listView.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
+            this.listView.Columns[this.listView.Columns.Count - 1].Width = -2;
+        }
+        #endregion Columnsize
+
+        //private void gbQueries_Enter(object sender, EventArgs e)  //TA BORT OM OK
+        //{
+        //}
     }
-
 }

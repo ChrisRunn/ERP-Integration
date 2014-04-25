@@ -9,7 +9,6 @@ namespace ERP_Integration
 {
     class DataAccessLayer
     {
-
         ERPIntegrationWSSoapClient proxy = new ERPIntegrationWSSoapClient();
         
         #region Select, Update, Delete, Insert
@@ -31,7 +30,7 @@ namespace ERP_Integration
         public List<Employee> ShowAllEmployees()
         {
 
-            List<Employee> myList = new List<Employee>(proxy.ShowAllEmployees());
+            List<Employee> myList = new List<Employee>(proxy.showAllEmployees());
             return myList;
         }
 
