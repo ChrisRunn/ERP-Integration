@@ -18,14 +18,14 @@ namespace ERP_Integration
 
         #region Select, Update, Delete, Insert
 
-        //public List<Employee> SearchEmployee(string searchString)
-        //{
-        //    return dal.SearchEmployee(searchString);
-        //}
-
-        public void InsertEmployee(string no, string name)
+        public List<Employee> ShowAllEmployees()
         {
-            this.dal.InsertEmployee(no, name);
+            return this.dal.ShowAllEmployees();
+        }
+
+        public void InsertEmployee(string no, string firstName, string lastName)
+        {
+            this.dal.InsertEmployee(no, firstName, lastName);
         }
 
         public void DeleteEmployee(string no)
@@ -33,33 +33,33 @@ namespace ERP_Integration
             this.dal.DeleteEmployee(no);
         }
 
-        public void UpdateEmployee(string no, string name, string lastName)
+        public void UpdateEmployee(string no, string firstName, string lastName)
         {
-            this.dal.UpdateEmployee(no, name, lastName);
+            this.dal.UpdateEmployee(no, firstName, lastName);
         }
 
         #endregion Select, Update, Delete, Insert
 
         #region Uppgift A
-        //public List<Employee> GetEmployeeAndMetadata()
-        //{
-        //    return dal.GetEmployeeAndMetadata();
-        //}
+        public List<SysObject> GetEmployeeAndMetadata()
+        {
+            return dal.GetEmployeeAndMetadata();
+        }
 
-        //public List<EmployeeRelative> GetEmployeeAndRelatives()
-        //{
-        //    return dal.GetEmployeeAndRelatives();
-        //}
+        public List<EmpRelativeQuery> GetEmployeeAndRelatives()
+        {
+            return dal.GetEmployeeAndRelatives();
+        }
 
-        //public List<EmployeeAbsence> GetSickEmployee()
-        //{
-        //    return dal.GetSickEmployee();
-        //}
+        public List<EmpSick> GetSickEmployee()
+        {
+            return dal.GetSickEmployee();
+        }
 
-        //public List<EmployeeAbsence> GetMostSickEmployee()
-        //{
-        //    return dal.GetMostSickEmployee();
-        //}
+        public List<EmpSick> GetMostSickEmployee()
+        {
+            return dal.GetMostSickEmployee();
+        }
 
         #endregion Uppgift A
 
@@ -69,35 +69,35 @@ namespace ERP_Integration
             return dal.GetAllKeys();
         }
 
-        //public List<SysIndex> GetAllIndexes()
-        //{
-        //    return dal.GetAllIndexes();
-        //}
+        public List<SysIndex> GetAllIndexes()
+        {
+            return dal.GetAllIndexes();
+        }
 
-        //public List<SysConstraint> GetAllConstraints()
-        //{
-        //    return dal.GetAllConstraints();
-        //}
+        public List<SysConstraint> GetAllConstraints()
+        {
+            return dal.GetAllConstraints();
+        }
 
-        //public List<SysObject> GetAllTables()
-        //{
-        //    return dal.GetAllTables();
-        //}
+        public List<SysObject> GetAllTables()
+        {
+            return dal.GetAllTables();
+        }
 
-        //public List<SysTable> GetAllTables2()
-        //{
-        //    return dal.GetAllTables2();
-        //}
+        public List<SysTable> GetAllTables2()
+        {
+            return dal.GetAllTables2();
+        }
 
-        //public List<SysColumn> GetColumnsEmployee()
-        //{
-        //    return dal.GetColumnsEmployee();
-        //}
+        public List<SysColumn> GetColumnsEmployee()
+        {
+            return dal.GetColumnsEmployee();
+        }
 
-        //public List<Information_Schema_Column> GetColumnsEmployee2()
-        //{
-        //    return dal.GetColumnsEmployee2();
-        //}
+        public List<Information_Schema_Column> GetColumnsEmployee2()
+        {
+            return dal.GetColumnsEmployee2();
+        }
         #endregion Uppgift B
     }
 }

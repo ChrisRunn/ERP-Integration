@@ -13,9 +13,9 @@ namespace ERP_Integration
         ERPIntegrationWSSoapClient proxy = new ERPIntegrationWSSoapClient();
         
         #region Select, Update, Delete, Insert
-        public void InsertEmployee(string no, string name)
+        public void InsertEmployee(string no, string firstName, string lastName)
         {
-            proxy.InsertEmployee(no, name);
+            proxy.InsertEmployee(no, firstName, lastName);
         }
 
         public void DeleteEmployee(string no)
@@ -23,43 +23,44 @@ namespace ERP_Integration
             proxy.DeleteEmployee(no);
         }
 
-        public void UpdateEmployee(string no, string name, string lastName)
+        public void UpdateEmployee(string no, string firstName, string lastName)
         {
-            proxy.UpdateEmployee(no, name, lastName);
+            proxy.UpdateEmployee(no, firstName, lastName);
         }
 
-        //public DataSet SearchEmployee(string searchString)
-        //{
-        //    List<Employee> myList = new List<Employee>(proxy.SearchEmployee(searchString)());
-        //    return myList;
-        //}
+        public List<Employee> ShowAllEmployees()
+        {
+
+            List<Employee> myList = new List<Employee>(proxy.ShowAllEmployees());
+            return myList;
+        }
 
         #endregion Select, Update, Delete, Insert
 
         #region Uppgift A
-        //public List<Employee> GetEmployeeAndMetadata()
-        //{
-        //    List<Employee> myList = new List<Employee>(proxy.GetEmployeeAndMetaData());
-        //    return myList;
-        //}
+        public List<SysObject> GetEmployeeAndMetadata()
+        {
+            List<SysObject> myList = new List<SysObject>(proxy.GetEmployeeAndMetaData());
+            return myList;
+        }
 
-        //public List<EmployeeRelative> GetEmployeeAndRelatives()
-        //{
-        //    List<EmployeeRelative> myList = new List<EmployeeRelative>(proxy.GetEmployeeAndRelatives());
-        //    return myList;
-        //}
+        public List<EmpRelativeQuery> GetEmployeeAndRelatives()
+        {
+            List<EmpRelativeQuery> myList = new List<EmpRelativeQuery>(proxy.GetEmployeeAndRelatives());
+            return myList;
+        }
 
-        //public List<EmployeeAbsence> GetSickEmployee()
-        //{
-        //    List<EmployeeAbsence> myList = new List<EmployeeAbsence>(proxy.GetSickEmployee());
-        //    return myList;
-        //}
+        public List<EmpSick> GetSickEmployee()
+        {
+            List<EmpSick> myList = new List<EmpSick>(proxy.GetSickEmployee());
+            return myList;
+        }
 
-        //public List<EmployeeAbsence> GetMostSickEmployee()
-        //{
-        //    List<EmployeeAbsence> myList = new List<EmployeeAbsence>(proxy.GetMostSickEmployee());
-        //    return myList;
-        //}
+        public List<EmpSick> GetMostSickEmployee()
+        {
+            List<EmpSick> myList = new List<EmpSick>(proxy.GetMostSickEmployee());
+            return myList;
+        }
 
         #endregion Uppgift A
 
@@ -70,41 +71,41 @@ namespace ERP_Integration
             return myList;
         }
 
-        //public List<SysIndex> GetAllIndexes()
-        //{
-        //     List<SysIndex> myList = new List<SysIndex>(proxy.GetAllIndexes());
-        //    return myList;
-        //}
+        public List<SysIndex> GetAllIndexes()
+        {
+            List<SysIndex> myList = new List<SysIndex>(proxy.GetAllIndexes());
+            return myList;
+        }
 
-        //public List<SysConstraint> GetAllConstraints()
-        //{
-        //    List<SysConstraint> myList = new List<SysConstraint>(proxy.GetAllConstraints());
-        //    return myList;
-        //}
+        public List<SysConstraint> GetAllConstraints()
+        {
+            List<SysConstraint> myList = new List<SysConstraint>(proxy.GetAllConstraints());
+            return myList;
+        }
 
-        //public List<SysObject> GetAllTables()
-        //{
-        //    List<SysObject> myList = new List<SysObject>(proxy.GetAllTables());
-        //    return myList;
-        //}
+        public List<SysObject> GetAllTables()
+        {
+            List<SysObject> myList = new List<SysObject>(proxy.GetAllTables());
+            return myList;
+        }
 
-        //public List<SysTable> GetAllTables2()
-        //{
-        //    List<SysTable> myList = new List<SysTable>(proxy.GetAllTables2());
-        //    return myList;
-        //}
+        public List<SysTable> GetAllTables2()
+        {
+            List<SysTable> myList = new List<SysTable>(proxy.GetAllTables2());
+            return myList;
+        }
 
-        //public List<SysColumn> GetColumnsEmployee()
-        //{
-        //    List<SysColumn> myList = new List<SysColumn>(proxy.GetColumnsEmployee());
-        //    return myList;
-        //}
+        public List<SysColumn> GetColumnsEmployee()
+        {
+            List<SysColumn> myList = new List<SysColumn>(proxy.GetColumnsEmployee());
+            return myList;
+        }
 
-        //public List<Information_Schema_Column> GetColumnsEmployee2()
-        //{
-        //    List<Information_Schema_Column> myList = new List<Information_Schema_Column>(proxy.GetColumnsEmployee2());
-        //    return myList;
-        //}
+        public List<Information_Schema_Column> GetColumnsEmployee2()
+        {
+            List<Information_Schema_Column> myList = new List<Information_Schema_Column>(proxy.GetColumnsEmployee2());
+            return myList;
+        }
         #endregion Uppgift B
 
 

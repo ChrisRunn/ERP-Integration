@@ -84,7 +84,31 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Service References\ERPIntegrationWSReference\ERPIntegrationWS.wsdl" />
+    <None Include="Service References\ERPIntegrationWSReference\ERP_Integration.ERPIntegrationWSReference.Employee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ERPIntegrationWSReference\ERP_Integration.ERPIntegrationWSReference.EmpRelativeQuery.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ERPIntegrationWSReference\ERP_Integration.ERPIntegrationWSReference.EmpSick.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ERPIntegrationWSReference\ERP_Integration.ERPIntegrationWSReference.Information_Schema_Column.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ERPIntegrationWSReference\ERP_Integration.ERPIntegrationWSReference.SysColumn.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ERPIntegrationWSReference\ERP_Integration.ERPIntegrationWSReference.SysConstraint.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ERPIntegrationWSReference\ERP_Integration.ERPIntegrationWSReference.SysIndex.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ERPIntegrationWSReference\ERP_Integration.ERPIntegrationWSReference.SysObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ERPIntegrationWSReference\ERP_Integration.ERPIntegrationWSReference.SysTable.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>

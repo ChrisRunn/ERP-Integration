@@ -45,27 +45,28 @@
             this.listView = new System.Windows.Forms.ListView();
             this.lblError = new System.Windows.Forms.Label();
             this.gbEditContent = new System.Windows.Forms.GroupBox();
+            this.btnShowAll = new System.Windows.Forms.Button();
             this.gbQueries.SuspendLayout();
             this.gbEditContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(93, 136);
+            this.btnDelete.Location = new System.Drawing.Point(86, 136);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 0;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Ta bort";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(179, 136);
+            this.btnUpdate.Location = new System.Drawing.Point(167, 136);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 1;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "Uppdatera";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -75,7 +76,7 @@
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 23);
             this.btnInsert.TabIndex = 2;
-            this.btnInsert.Text = "Insert";
+            this.btnInsert.Text = "Lägg till";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
@@ -93,9 +94,9 @@
             this.lblQueries.AutoSize = true;
             this.lblQueries.Location = new System.Drawing.Point(16, 208);
             this.lblQueries.Name = "lblQueries";
-            this.lblQueries.Size = new System.Drawing.Size(72, 13);
+            this.lblQueries.Size = new System.Drawing.Size(53, 13);
             this.lblQueries.TabIndex = 4;
-            this.lblQueries.Text = "Choose query";
+            this.lblQueries.Text = "Välj query";
             // 
             // txtBoxLastName
             // 
@@ -123,27 +124,27 @@
             this.lblNo.AutoSize = true;
             this.lblNo.Location = new System.Drawing.Point(4, 16);
             this.lblNo.Name = "lblNo";
-            this.lblNo.Size = new System.Drawing.Size(91, 13);
+            this.lblNo.Size = new System.Drawing.Size(100, 13);
             this.lblNo.TabIndex = 9;
-            this.lblNo.Text = "Employee number";
+            this.lblNo.Text = "Anställningsnummer";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(4, 55);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(82, 13);
+            this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 10;
-            this.lblName.Text = "Employee name";
+            this.lblName.Text = "Namn";
             // 
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.Location = new System.Drawing.Point(4, 94);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(101, 13);
+            this.lblLastName.Size = new System.Drawing.Size(55, 13);
             this.lblLastName.TabIndex = 11;
-            this.lblLastName.Text = "Employee last name";
+            this.lblLastName.Text = "Efternamn";
             // 
             // cbOptions2
             // 
@@ -159,9 +160,9 @@
             this.lblMetaData.AutoSize = true;
             this.lblMetaData.Location = new System.Drawing.Point(16, 248);
             this.lblMetaData.Name = "lblMetaData";
-            this.lblMetaData.Size = new System.Drawing.Size(71, 13);
+            this.lblMetaData.Size = new System.Drawing.Size(85, 13);
             this.lblMetaData.TabIndex = 13;
-            this.lblMetaData.Text = "Get metadata";
+            this.lblMetaData.Text = "Hämta metadata";
             // 
             // gbQueries
             // 
@@ -200,6 +201,7 @@
             // 
             // gbEditContent
             // 
+            this.gbEditContent.Controls.Add(this.btnShowAll);
             this.gbEditContent.Controls.Add(this.lblNo);
             this.gbEditContent.Controls.Add(this.txtBoxNo);
             this.gbEditContent.Controls.Add(this.btnInsert);
@@ -214,6 +216,16 @@
             this.gbEditContent.Size = new System.Drawing.Size(350, 169);
             this.gbEditContent.TabIndex = 16;
             this.gbEditContent.TabStop = false;
+            // 
+            // btnShowAll
+            // 
+            this.btnShowAll.Location = new System.Drawing.Point(245, 136);
+            this.btnShowAll.Name = "btnShowAll";
+            this.btnShowAll.Size = new System.Drawing.Size(95, 23);
+            this.btnShowAll.TabIndex = 12;
+            this.btnShowAll.Text = "Visa anställda";
+            this.btnShowAll.UseVisualStyleBackColor = true;
+            this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
             // 
             // ErpGui
             // 
@@ -250,6 +262,7 @@
         private System.Windows.Forms.GroupBox gbEditContent;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.ListView listView;
+        private System.Windows.Forms.Button btnShowAll;
     }
 }
 
