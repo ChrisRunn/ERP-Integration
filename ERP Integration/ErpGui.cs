@@ -229,10 +229,18 @@ namespace ERP_Integration
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            string no = txtBoxNo.Text;
-            string firstName = txtBoxName.Text;
-            string lastName = txtBoxLastName.Text;
-            c.InsertEmployee(no, firstName, lastName);
+
+            if (!string.IsNullOrEmpty(txtBoxNo.Text) && !string.IsNullOrEmpty(txtBoxName.Text) && !string.IsNullOrEmpty(txtBoxLastName.Text))
+            {
+                string no = txtBoxNo.Text;
+                string firstName = txtBoxName.Text;
+                string lastName = txtBoxLastName.Text;
+                c.InsertEmployee(no, firstName, lastName);
+            }
+            else
+            {
+                lblError.Text = "Du har ej fyllt i alla fält";
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

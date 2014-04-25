@@ -178,7 +178,6 @@
             this.gbQueries.Size = new System.Drawing.Size(1005, 560);
             this.gbQueries.TabIndex = 16;
             this.gbQueries.TabStop = false;
-            //this.gbQueries.Enter += new System.EventHandler(this.gbQueries_Enter);
             // 
             // listView
             // 
@@ -194,7 +193,7 @@
             // 
             this.lblError.AutoSize = true;
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(25, 190);
+            this.lblError.Location = new System.Drawing.Point(16, 541);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 17;

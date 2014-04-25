@@ -270,6 +270,9 @@ namespace ERP_Integration.ERPIntegrationWSReference {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string QuantityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string DescriptionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -292,6 +295,19 @@ namespace ERP_Integration.ERPIntegrationWSReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Quantity {
+            get {
+                return this.QuantityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.QuantityField, value) != true)) {
+                    this.QuantityField = value;
+                    this.RaisePropertyChanged("Quantity");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
         public string Description {
             get {
                 return this.DescriptionField;
@@ -304,7 +320,7 @@ namespace ERP_Integration.ERPIntegrationWSReference {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
         public string CasueOfAbsenceCode {
             get {
                 return this.CasueOfAbsenceCodeField;
@@ -317,7 +333,7 @@ namespace ERP_Integration.ERPIntegrationWSReference {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
         public string FirstName {
             get {
                 return this.FirstNameField;
@@ -330,7 +346,7 @@ namespace ERP_Integration.ERPIntegrationWSReference {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
         public string LastName {
             get {
                 return this.LastNameField;
@@ -658,9 +674,9 @@ namespace ERP_Integration.ERPIntegrationWSReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://brokerapplication.org/DeleteEmployee", ReplyAction="*")]
         ERP_Integration.ERPIntegrationWSReference.DeleteEmployeeResponse DeleteEmployee(ERP_Integration.ERPIntegrationWSReference.DeleteEmployeeRequest request);
         
-        // CODEGEN: Generating message contract since element name showAllEmployeesResult from namespace http://brokerapplication.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://brokerapplication.org/showAllEmployees", ReplyAction="*")]
-        ERP_Integration.ERPIntegrationWSReference.showAllEmployeesResponse showAllEmployees(ERP_Integration.ERPIntegrationWSReference.showAllEmployeesRequest request);
+        // CODEGEN: Generating message contract since element name ShowAllEmployeesResult from namespace http://brokerapplication.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://brokerapplication.org/ShowAllEmployees", ReplyAction="*")]
+        ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesResponse ShowAllEmployees(ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesRequest request);
         
         // CODEGEN: Generating message contract since element name GetEmployeeAndMetaDataResult from namespace http://brokerapplication.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://brokerapplication.org/GetEmployeeAndMetaData", ReplyAction="*")]
@@ -910,15 +926,15 @@ namespace ERP_Integration.ERPIntegrationWSReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class showAllEmployeesRequest {
+    public partial class ShowAllEmployeesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="showAllEmployees", Namespace="http://brokerapplication.org/", Order=0)]
-        public ERP_Integration.ERPIntegrationWSReference.showAllEmployeesRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ShowAllEmployees", Namespace="http://brokerapplication.org/", Order=0)]
+        public ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesRequestBody Body;
         
-        public showAllEmployeesRequest() {
+        public ShowAllEmployeesRequest() {
         }
         
-        public showAllEmployeesRequest(ERP_Integration.ERPIntegrationWSReference.showAllEmployeesRequestBody Body) {
+        public ShowAllEmployeesRequest(ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -927,9 +943,9 @@ namespace ERP_Integration.ERPIntegrationWSReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute()]
-    public partial class showAllEmployeesRequestBody {
+    public partial class ShowAllEmployeesRequestBody {
         
-        public showAllEmployeesRequestBody() {
+        public ShowAllEmployeesRequestBody() {
         }
     }
     
@@ -937,15 +953,15 @@ namespace ERP_Integration.ERPIntegrationWSReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class showAllEmployeesResponse {
+    public partial class ShowAllEmployeesResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="showAllEmployeesResponse", Namespace="http://brokerapplication.org/", Order=0)]
-        public ERP_Integration.ERPIntegrationWSReference.showAllEmployeesResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ShowAllEmployeesResponse", Namespace="http://brokerapplication.org/", Order=0)]
+        public ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesResponseBody Body;
         
-        public showAllEmployeesResponse() {
+        public ShowAllEmployeesResponse() {
         }
         
-        public showAllEmployeesResponse(ERP_Integration.ERPIntegrationWSReference.showAllEmployeesResponseBody Body) {
+        public ShowAllEmployeesResponse(ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -954,16 +970,16 @@ namespace ERP_Integration.ERPIntegrationWSReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://brokerapplication.org/")]
-    public partial class showAllEmployeesResponseBody {
+    public partial class ShowAllEmployeesResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ERP_Integration.ERPIntegrationWSReference.Employee[] showAllEmployeesResult;
+        public ERP_Integration.ERPIntegrationWSReference.Employee[] ShowAllEmployeesResult;
         
-        public showAllEmployeesResponseBody() {
+        public ShowAllEmployeesResponseBody() {
         }
         
-        public showAllEmployeesResponseBody(ERP_Integration.ERPIntegrationWSReference.Employee[] showAllEmployeesResult) {
-            this.showAllEmployeesResult = showAllEmployeesResult;
+        public ShowAllEmployeesResponseBody(ERP_Integration.ERPIntegrationWSReference.Employee[] ShowAllEmployeesResult) {
+            this.ShowAllEmployeesResult = ShowAllEmployeesResult;
         }
     }
     
@@ -1706,15 +1722,15 @@ namespace ERP_Integration.ERPIntegrationWSReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ERP_Integration.ERPIntegrationWSReference.showAllEmployeesResponse ERP_Integration.ERPIntegrationWSReference.ERPIntegrationWSSoap.showAllEmployees(ERP_Integration.ERPIntegrationWSReference.showAllEmployeesRequest request) {
-            return base.Channel.showAllEmployees(request);
+        ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesResponse ERP_Integration.ERPIntegrationWSReference.ERPIntegrationWSSoap.ShowAllEmployees(ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesRequest request) {
+            return base.Channel.ShowAllEmployees(request);
         }
         
-        public ERP_Integration.ERPIntegrationWSReference.Employee[] showAllEmployees() {
-            ERP_Integration.ERPIntegrationWSReference.showAllEmployeesRequest inValue = new ERP_Integration.ERPIntegrationWSReference.showAllEmployeesRequest();
-            inValue.Body = new ERP_Integration.ERPIntegrationWSReference.showAllEmployeesRequestBody();
-            ERP_Integration.ERPIntegrationWSReference.showAllEmployeesResponse retVal = ((ERP_Integration.ERPIntegrationWSReference.ERPIntegrationWSSoap)(this)).showAllEmployees(inValue);
-            return retVal.Body.showAllEmployeesResult;
+        public ERP_Integration.ERPIntegrationWSReference.Employee[] ShowAllEmployees() {
+            ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesRequest inValue = new ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesRequest();
+            inValue.Body = new ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesRequestBody();
+            ERP_Integration.ERPIntegrationWSReference.ShowAllEmployeesResponse retVal = ((ERP_Integration.ERPIntegrationWSReference.ERPIntegrationWSSoap)(this)).ShowAllEmployees(inValue);
+            return retVal.Body.ShowAllEmployeesResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

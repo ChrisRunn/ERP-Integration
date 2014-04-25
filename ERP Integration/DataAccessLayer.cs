@@ -30,7 +30,7 @@ namespace ERP_Integration
         public List<Employee> ShowAllEmployees()
         {
 
-            List<Employee> myList = new List<Employee>(proxy.showAllEmployees());
+            List<Employee> myList = new List<Employee>(proxy.ShowAllEmployees());
             return myList;
         }
 
