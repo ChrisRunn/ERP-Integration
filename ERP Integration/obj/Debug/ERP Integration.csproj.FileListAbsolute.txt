@@ -42,3 +42,12 @@ C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\obj\Debug\
 C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\obj\Debug\ERP_Integration.ErpGui.resources
 C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\obj\Debug\ERP_Integration.Properties.Resources.resources
 C:\Users\Christia\Desktop\Git\ERP Integration Consume\ERP Integration\obj\Debug\ERP Integration.csproj.GenerateResource.Cache
+C:\Users\Marcus Jacobsson\git\ERP-Integration- DotNetWindowsForms2\ERP Integration\bin\Debug\ERP Integration.exe.config
+C:\Users\Marcus Jacobsson\git\ERP-Integration- DotNetWindowsForms2\ERP Integration\obj\Debug\ERP Integration.exe
+C:\Users\Marcus Jacobsson\git\ERP-Integration- DotNetWindowsForms2\ERP Integration\obj\Debug\ERP Integration.pdb
+C:\Users\Marcus Jacobsson\git\ERP-Integration- DotNetWindowsForms2\ERP Integration\bin\Debug\ERP Integration.exe
+C:\Users\Marcus Jacobsson\git\ERP-Integration- DotNetWindowsForms2\ERP Integration\bin\Debug\ERP Integration.pdb
+C:\Users\Marcus Jacobsson\git\ERP-Integration- DotNetWindowsForms2\ERP Integration\obj\Debug\ERP Integration.csprojResolveAssemblyReference.cache
+C:\Users\Marcus Jacobsson\git\ERP-Integration- DotNetWindowsForms2\ERP Integration\obj\Debug\ERP_Integration.ErpGui.resources
+C:\Users\Marcus Jacobsson\git\ERP-Integration- DotNetWindowsForms2\ERP Integration\obj\Debug\ERP_Integration.Properties.Resources.resources
+C:\Users\Marcus Jacobsson\git\ERP-Integration- DotNetWindowsForms2\ERP Integration\obj\Debug\ERP Integration.csproj.GenerateResource.Cache

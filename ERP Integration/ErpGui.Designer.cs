@@ -178,13 +178,14 @@
             this.gbQueries.Size = new System.Drawing.Size(1005, 560);
             this.gbQueries.TabIndex = 16;
             this.gbQueries.TabStop = false;
+            this.gbQueries.Enter += new System.EventHandler(this.gbQueries_Enter);
             // 
             // listView
             // 
             this.listView.GridLines = true;
             this.listView.Location = new System.Drawing.Point(383, 34);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(594, 520);
+            this.listView.Size = new System.Drawing.Size(594, 502);
             this.listView.TabIndex = 18;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
