@@ -99,5 +99,10 @@ namespace ERP_Integration
             return dal.GetColumnsEmployee2();
         }
         #endregion Uppgift B
+
+        public bool CheckIfEmplyeeExists(string no)
+        {
+            return dal.CheckIfEmployeeExists(no);
+        }
     }
 }

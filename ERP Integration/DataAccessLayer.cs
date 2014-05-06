@@ -107,6 +107,10 @@ namespace ERP_Integration
         }
         #endregion Uppgift B
 
+        public bool CheckIfEmployeeExists(string no)
+        {
+            return proxy.CheckIfEmployeeExists(no);
+        }
 
     }
 }

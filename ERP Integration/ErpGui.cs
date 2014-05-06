@@ -248,14 +248,23 @@ namespace ERP_Integration
         private void btnInsert_Click(object sender, EventArgs e)
         {
             try
-            {
+            {                
                 if (!string.IsNullOrEmpty(txtBoxNo.Text) && !string.IsNullOrEmpty(txtBoxName.Text) && !string.IsNullOrEmpty(txtBoxLastName.Text))
                 {
                     string no = txtBoxNo.Text;
                     string firstName = txtBoxName.Text;
                     string lastName = txtBoxLastName.Text;
-                    c.InsertEmployee(no, firstName, lastName);
-                    lblError.Text = "";
+                    bool exists = c.CheckIfEmplyeeExists(no);
+                    if (exists)
+                    {
+                        lblError.Text = "Det finns redan en anställd med nummer " + no + ".";
+                    }
+                    else
+                    {
+                        c.InsertEmployee(no, firstName, lastName);
+                        lblError.Text = "";
+                        btnShowAll_Click(sender, e);
+                    }                    
                 }
                 else
                 {
@@ -275,8 +284,18 @@ namespace ERP_Integration
             try
             {
                 string no = txtBoxNo.Text;
-                c.DeleteEmployee(no);
-                lblError.Text = "";
+                bool exists = c.CheckIfEmplyeeExists(no);
+                if (exists)
+                {
+                    c.DeleteEmployee(no);
+                    lblError.Text = "";
+                    btnShowAll_Click(sender, e);
+                }
+                else
+                {
+                    lblError.Text = "Anställd med nummer " + no + " finns inte. Vänlig kontrollera nummer.";
+                }
+                
             }
             catch (Exception ex)
             {
@@ -292,9 +311,18 @@ namespace ERP_Integration
                 string no = txtBoxNo.Text;
                 string firstName = txtBoxName.Text;
                 string lastName = txtBoxLastName.Text;
-
-                c.UpdateEmployee(no, firstName, lastName);
-                lblError.Text = "";
+                bool exists = c.CheckIfEmplyeeExists(no);
+                if (exists)
+                {
+                    c.UpdateEmployee(no, firstName, lastName);
+                    lblError.Text = "";
+                    btnShowAll_Click(sender, e);
+                }
+                else
+                {
+                    lblError.Text = "Anställd med nummer " + no + " finns inte. Vänlig kontrollera nummer.";
+                }
+                
             }
             catch (Exception ex)
             {
@@ -342,6 +370,11 @@ namespace ERP_Integration
         #endregion Columnsize
 
         private void gbQueries_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbEditContent_Enter(object sender, EventArgs e)
         {
 
         }

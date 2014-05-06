@@ -261,6 +261,20 @@
           <s:element minOccurs="0" maxOccurs="1" name="COLUMN_NAME1" type="s:string" />
         </s:sequence>
       </s:complexType>
+      <s:element name="CheckIfEmployeeExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="no" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckIfEmployeeExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckIfEmployeeExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="InsertEmployeeSoapIn">
@@ -353,6 +367,12 @@
   <wsdl:message name="GetColumnsEmployee2SoapOut">
     <wsdl:part name="parameters" element="tns:GetColumnsEmployee2Response" />
   </wsdl:message>
+  <wsdl:message name="CheckIfEmployeeExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckIfEmployeeExists" />
+  </wsdl:message>
+  <wsdl:message name="CheckIfEmployeeExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckIfEmployeeExistsResponse" />
+  </wsdl:message>
   <wsdl:portType name="ERPIntegrationWSSoap">
     <wsdl:operation name="InsertEmployee">
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inserts new employee</wsdl:documentation>
@@ -428,6 +448,11 @@
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Shows all columns in Employee table Solution 2</wsdl:documentation>
       <wsdl:input message="tns:GetColumnsEmployee2SoapIn" />
       <wsdl:output message="tns:GetColumnsEmployee2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckIfEmployeeExists">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Checks if the employee exists</wsdl:documentation>
+      <wsdl:input message="tns:CheckIfEmployeeExistsSoapIn" />
+      <wsdl:output message="tns:CheckIfEmployeeExistsSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="ERPIntegrationWSSoap" type="tns:ERPIntegrationWSSoap">
@@ -567,6 +592,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="CheckIfEmployeeExists">
+      <soap:operation soapAction="http://brokerapplication.org/CheckIfEmployeeExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="ERPIntegrationWSSoap12" type="tns:ERPIntegrationWSSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -698,6 +732,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetColumnsEmployee2">
       <soap12:operation soapAction="http://brokerapplication.org/GetColumnsEmployee2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckIfEmployeeExists">
+      <soap12:operation soapAction="http://brokerapplication.org/CheckIfEmployeeExists" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

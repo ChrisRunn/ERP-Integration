@@ -55,7 +55,7 @@
             this.btnDelete.Location = new System.Drawing.Point(86, 136);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 0;
+            this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Ta bort";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -65,7 +65,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(167, 136);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 1;
+            this.btnUpdate.TabIndex = 5;
             this.btnUpdate.Text = "Uppdatera";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -75,7 +75,7 @@
             this.btnInsert.Location = new System.Drawing.Point(7, 136);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 23);
-            this.btnInsert.TabIndex = 2;
+            this.btnInsert.TabIndex = 3;
             this.btnInsert.Text = "Lägg till";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
@@ -103,21 +103,21 @@
             this.txtBoxLastName.Location = new System.Drawing.Point(7, 110);
             this.txtBoxLastName.Name = "txtBoxLastName";
             this.txtBoxLastName.Size = new System.Drawing.Size(335, 20);
-            this.txtBoxLastName.TabIndex = 6;
+            this.txtBoxLastName.TabIndex = 2;
             // 
             // txtBoxName
             // 
             this.txtBoxName.Location = new System.Drawing.Point(7, 71);
             this.txtBoxName.Name = "txtBoxName";
             this.txtBoxName.Size = new System.Drawing.Size(335, 20);
-            this.txtBoxName.TabIndex = 7;
+            this.txtBoxName.TabIndex = 2;
             // 
             // txtBoxNo
             // 
             this.txtBoxNo.Location = new System.Drawing.Point(7, 32);
             this.txtBoxNo.Name = "txtBoxNo";
             this.txtBoxNo.Size = new System.Drawing.Size(335, 20);
-            this.txtBoxNo.TabIndex = 8;
+            this.txtBoxNo.TabIndex = 1;
             // 
             // lblNo
             // 
@@ -216,13 +216,14 @@
             this.gbEditContent.Size = new System.Drawing.Size(350, 169);
             this.gbEditContent.TabIndex = 16;
             this.gbEditContent.TabStop = false;
+            this.gbEditContent.Enter += new System.EventHandler(this.gbEditContent_Enter);
             // 
             // btnShowAll
             // 
             this.btnShowAll.Location = new System.Drawing.Point(245, 136);
             this.btnShowAll.Name = "btnShowAll";
             this.btnShowAll.Size = new System.Drawing.Size(95, 23);
-            this.btnShowAll.TabIndex = 12;
+            this.btnShowAll.TabIndex = 6;
             this.btnShowAll.Text = "Visa anställda";
             this.btnShowAll.UseVisualStyleBackColor = true;
             this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
